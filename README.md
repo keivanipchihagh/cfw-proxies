@@ -17,3 +17,11 @@ This script masks your V2ray address with Cloudflare Workers. It can be used to 
 
 > **Note**
 > Your V2ray config must be a **Vmess** **WebSocket**, listening on open Cloudflare ports and using **TLS**. This behavior is pretty much like CDNs.
+
+
+### subscribe.js
+Thanks to the many free GitHub node collection projects, the `subscribe.js` script is used to subscribe to a list of proxies all around the globe. Steps:
+1. Deploy the script on a Cloudflare worker.
+2. Subscribe to the worker address.\
+3. Your subscription link is like `https://xxxx-xxxx-xxxx.xxxxxx.workers.dev/sub/`. Add it to your client:
+    - **v2rayNG**: Add a new subscription with previous address and update subscription.
